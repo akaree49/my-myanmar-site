@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+-->
+<html>
+<head>
+	<title>Welcome to Myanmar!</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script> 
+	  window.alert("Welcome to my Myanmar website!");
+	</script>
+</head> 
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Explore Myanmar</a></h1>
+			<nav><a href="#menu">Menu</a></nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Myanmar</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<div class="logo"><span class="icon fa-gem"></span></div>
+				<h2>Hey there! ヾ(＾ ∇ ＾).</h2>
+				<p>Welcome to my little website about my country, Myanmar. 
+				If you haven’t been, no worries, I’ll share some cool things with you! (◡◕⏖◕)ᑐ🝐 ⠁⭒*.✩.*⭒⠁</p>
+				<p>Original template from <a href="https://html5up.net/solid-state" target="_blank">HTML5 UP Solid State</a></p>
+			</div>
+		</section>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+
+			<!-- One -->
+			<section id="one" class="wrapper spotlight style1">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/mm1.jpg" alt="Bagan" /></a>
+					<div class="content">
+						<h2 class="major">Bagan</h2>
+						<p>Bagan has so many old temples and amazing sunrises with hot air balloons floating above. It’s one of my favorite places in Myanmar because it feels really calm and almost like a dream.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section id="two" class="wrapper alt spotlight style2">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/mm2.jpg" alt="Inle Lake" /></a>
+					<div class="content">
+						<h2 class="major">Inle Lake</h2>
+						<p>Famous for fishermen who row with their legs (yes, seriously!) and floating gardens. It's like something out of a movie.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section id="three" class="wrapper spotlight style3">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/mm3.jpg" alt="Shwedagon Pagoda" /></a>
+					<div class="content">
+						<h2 class="major">Shwedagon Pagoda</h2>
+						<p>The most iconic golden stupa in Yangon. Always glowing, always busy, always beautiful.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Four: JS input -->
+			<section id="four" class="wrapper alt style1">
+				<div class="inner">
+					<h2 class="major">Tell me!</h2>
+					<p>What do you want to see most in Myanmar?</p>
+					<input type="text" id="placeInput" placeholder="Type here...">
+					<br>
+					<button onclick="showPlace()">Tell me!</button>
+					<p id="output"></p>
+				</div>
+			</section>
+
+		</section>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="inner">
+				<h2 class="major">Thanks for visiting!</h2>
+				<p>If you ever want a tour guide, let me know! ;)</p>
+				<ul class="copyright">
+					<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>ID: 24229506</li><li> Name: Akaree Nan Myint</li>
+				</ul>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+	function showPlace() {
+		var place = document.getElementById("placeInput").value;
+		if (place === "") {
+			document.getElementById("output").innerHTML = "Don't be shy, type something!";
+		} else {
+			document.getElementById("output").innerHTML = "Ooo, " + place + " — great choice! Hope you get to visit someday.";
+		}
+	}
+	</script>
+
+</body>
+</html>
